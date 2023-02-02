@@ -11,10 +11,9 @@
     height: 100%;
     list-style: none;
     text-transform: uppercase;
-
-    li{
-        display: inline-block;
-    }
+}
+.list-row > li{
+    display: inline-block;
 }
 a{
     text-decoration: none;

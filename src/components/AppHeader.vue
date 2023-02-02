@@ -12,7 +12,7 @@ export default {
             </div>
 
             <nav>
-                <ul>
+                <ul class="list-row">
                     <li>
                         <a href="#">
                             charachters
@@ -86,8 +86,8 @@ export default {
     nav{
         height: 100%;
         
-        ul{
-            font-size: 0.75em;
+        .list-row{
+            font-size: 0.85em;
 
         li{
             display: inline-block;
