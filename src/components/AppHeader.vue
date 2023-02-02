@@ -6,72 +6,75 @@ export default {
 
 <template>
     <header>
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="">
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            charachters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            comics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            movies
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            tv
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            collectibles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            fans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            news
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            shop
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">
-                        charachters
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="active">
-                        comics
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        movies
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        tv
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        games
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        collectibles
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        videos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        fans
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        news
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        shop
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 </template>
 
 <style lang="scss" scoped>
-header{
+.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    height: 100px;
 
     .logo{
         
@@ -81,16 +84,21 @@ header{
     }
 
     nav{
+        height: 100%;
+        
         ul{
-        list-style: none;
-        text-transform: uppercase;
-        font-size: 0.75em;
+            height: 100%;
+            list-style: none;
+            text-transform: uppercase;
+            font-size: 0.75em;
 
         li{
             display: inline-block;
-            padding: 20px 10px;
+            line-height: 100px;
+            height: 100%;
 
             a{
+                margin: 0 10px;
                 text-decoration: none;
                 color: black;
 

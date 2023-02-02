@@ -5,11 +5,23 @@ export default {
 </script>
 
 <template>
-     <div>
-        main
-    </div>
+    <main>
+        <div class="container">
+            <div>
+                <h1> Contest goes here </h1>
+            </div>
+        </div>
+    </main>
+    
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+main{
+    height: 100px;
+    background-color: black;
+}
+h1{
+    line-height: 100px;
+    color: white;
+}
 </style>
