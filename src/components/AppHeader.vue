@@ -51,12 +51,11 @@ nav{
 nav > ul{
     font-size: 0.85em;
 }
-ul > li{
+nav ul > li{
     display: inline-block;
     line-height: 100px;
     height: 100%;
 }
-
 ul li a{
     margin: 0 10px;
     text-decoration: none;
