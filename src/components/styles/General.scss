@@ -7,3 +7,15 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.list-row{
+    height: 100%;
+    list-style: none;
+    text-transform: uppercase;
+
+    li{
+        display: inline-block;
+    }
+}
+a{
+    text-decoration: none;
+}

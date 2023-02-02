@@ -87,9 +87,6 @@ export default {
         height: 100%;
         
         ul{
-            height: 100%;
-            list-style: none;
-            text-transform: uppercase;
             font-size: 0.75em;
 
         li{

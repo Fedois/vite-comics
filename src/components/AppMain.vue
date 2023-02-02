@@ -8,7 +8,7 @@ export default {
     <main>
         <div class="container">
             <div>
-                <h1> Contest goes here </h1>
+                <h1> Content goes here </h1>
             </div>
         </div>
     </main>
