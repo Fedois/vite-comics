@@ -8,30 +8,35 @@ export default {
     <footer>
         <section class="section-top">
             <div class="small-container">
-                <ul class="list-row">
+                <ul class="list-buy">
                     <li>
                         <a href="#">
-                            digital comics
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            digital comic
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            dc merchandise
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                            dc merchandis
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            subscription
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                            subscriptio
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            comic shop locator
+                            <img id="special-img" src="../assets/img/buy-comics-shop-locator.png" alt="">
+                            comic shop locato
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            dc power visa
+                            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                            dc power vis
                         </a>
                     </li>
                 </ul>
@@ -97,6 +102,42 @@ export default {
         </section>
         
         <section class="section-bottom">
+            <div class="container">
+                <div class="sign">
+                    <button><a href="#">SIGN-UP NOW!</a></button>
+                </div>
+
+                <div class="follow">
+                    <h3>FOLLOW US</h3>
+                    <ul class="list-social">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-facebook.png" alt="">
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#"> 
+                                <img src="../assets/img/footer-twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-youtube.png" alt="">
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#"> 
+                                <img src="../assets/img/footer-pinterest.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-periscope.png" alt="">
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
             
         </section>
     </footer>
@@ -113,14 +154,24 @@ export default {
     height: 130px;
 }
             
-.small-container > ul{
+.small-container > .list-buy{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.list-buy img{
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#special-img{
+    width: 40px;
+}
 
-.small-container li > a{
+.list-buy li > a{
     color: white;
+    text-transform: uppercase;
 }
 
 /* inizio jumbotron */
@@ -148,13 +199,8 @@ export default {
 h3{
     margin: 15px 0;
 }
-
-ul{
-    list-style: none;
-}
-
 ul li > a{
-    color: lightgray;
+    color: rgb(173, 168, 168);
     text-transform: capitalize;
 }
 .big-logo{
@@ -171,5 +217,35 @@ ul li > a{
     height: 100px;
     background-color: rgb(27, 27, 27);
 }
-
+.section-bottom > .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign > button{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 128, 255);
+}
+.sign > button a{
+    color: white;
+}
+.follow > h3{
+    color: rgb(0, 128, 255);
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align:middle;
+}
+.list-social{
+    display: inline-block;
+}
+.list-social > li{
+    display: inline-block;
+}
+.list-social > li img{
+    margin: 0 5px;
+    vertical-align: middle;
+    width: 30px;
+}
 </style>

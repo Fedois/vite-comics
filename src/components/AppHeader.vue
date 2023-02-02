@@ -12,7 +12,7 @@ export default {
             </div>
 
             <nav>
-                <ul class="list-row">
+                <ul>
                     <li><a href="#">charachters</a></li>
                     <li><a href="#" class="active">comics</a></li>
                     <li><a href="#">movies</a></li>
@@ -48,18 +48,20 @@ header{
 nav{
     height: 100%;
 }
-.list-row{
+nav > ul{
     font-size: 0.85em;
 }
-.list-row > li{
+ul > li{
+    display: inline-block;
     line-height: 100px;
     height: 100%;
 }
 
-.list-row a{
+ul li a{
     margin: 0 10px;
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
 }
 a.active{
     color: blue;
