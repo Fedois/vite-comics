@@ -193,7 +193,7 @@ export default {
 }
 
 .list-container > div{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 h3{

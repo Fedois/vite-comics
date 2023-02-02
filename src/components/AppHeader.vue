@@ -59,10 +59,11 @@ nav ul > li{
 ul li a{
     margin: 0 10px;
     text-decoration: none;
-    color: black;
+    color: rgb(54, 54, 54);
     text-transform: uppercase;
+    font-weight: bold;
 }
 a.active{
-    color: blue;
+    color: rgb(0, 128, 255);
 }
 </style>
