@@ -13,98 +13,55 @@ export default {
 
             <nav>
                 <ul class="list-row">
-                    <li>
-                        <a href="#">
-                            charachters
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="active">
-                            comics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            movies
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            tv
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            games
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            collectibles
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            videos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            fans
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            news
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            shop
-                        </a>
-                    </li>
+                    <li><a href="#">charachters</a></li>
+                    <li><a href="#" class="active">comics</a></li>
+                    <li><a href="#">movies</a></li>
+                    <li><a href="#">tv</a></li>
+                    <li><a href="#">games</a></li>
+                    <li><a href="#">collectibles</a></li>
+                    <li><a href="#">videos</a></li>
+                    <li><a href="#">fans</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">shop</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 30
+}
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+.logo > img{
+    width: 80px;
+}
+nav{
+    height: 100%;
+}
+.list-row{
+    font-size: 0.85em;
+}
+.list-row > li{
+    line-height: 100px;
+    height: 100%;
+}
 
-    .logo{
-        
-        img{
-            width: 80px;
-        }
-    }
-
-    nav{
-        height: 100%;
-        
-        .list-row{
-            font-size: 0.85em;
-
-        li{
-            display: inline-block;
-            line-height: 100px;
-            height: 100%;
-
-            a{
-                margin: 0 10px;
-                text-decoration: none;
-                color: black;
-
-                &.active{
-                    color: blue;
-                }
-            }
-        }
-    }
-    }
+.list-row a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+a.active{
+    color: blue;
 }
 </style>

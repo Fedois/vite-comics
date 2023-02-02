@@ -102,83 +102,74 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped>
-
-footer{
-    .section-top{
-        background-color: rgb(0, 128, 255);
-
-        .small-container{
-             max-width: 1100px;
-             margin: 0 auto;
-            height: 130px;
+<style scoped>
+/* contenuto top */
+.section-top{
+    background-color: rgb(0, 128, 255);
+}
+.small-container{
+    max-width: 1100px;
+     margin: 0 auto;
+    height: 130px;
+}
             
-            & ul{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+.small-container > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-                li{
-                    a{
-                        color: white;
-                    }
-                }
-             }
-        }
-    }
+.small-container li > a{
+    color: white;
+}
 
-    .jumbotron{
-        background: url("../assets/img/footer-bg.jpg");
-        background-size: cover;
-        height: 400px;
-        overflow: hidden;
+/* inizio jumbotron */
+.jumbotron{
+    background: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+}
+.container{
+    display: flex;
 
-        > .container{
-            display: flex;
+}
+.list-container{
+    padding-top: 20px ;
+    display: flex;
+    color: white;
+    width: 50%;
+}
 
-            .list-container{
-                padding-top: 20px ;
-                display: flex;
-                color: white;
-                width: 50%;
+.list-container > div{
+    margin-right: 20px;
+}
 
-                >div{
-                    margin-right: 20px;
+h3{
+    margin: 15px 0;
+}
 
-                    h3{
-                      margin: 15px 0;
-                    }
+ul{
+    list-style: none;
+}
 
-                    ul{
-                        list-style: none;
+ul li > a{
+    color: lightgray;
+    text-transform: capitalize;
+}
+.big-logo{
+    width: 50%;
+    position: relative;
+}
 
-                        li{
-                            a{
-                                color: lightgray;
-                                text-transform: capitalize;
-                            }
-                        }
-                    }
-                }
-            }
-            .big-logo{
-                width: 50%;
-                position: relative;
-
-                > img{
-                    position: absolute;
-                    top: -50px;
-                    left: 0;
-                }
-            }
-        }
-        
-    }
-
-    .section-bottom{
-        height: 100px;
-        background-color: rgb(27, 27, 27);
-    }
+.big-logo img{
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+.section-bottom{
+    height: 100px;
+    background-color: rgb(27, 27, 27);
 }
 
 </style>
