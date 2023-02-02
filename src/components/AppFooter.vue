@@ -12,31 +12,31 @@ export default {
                     <li>
                         <a href="#">
                             <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                            digital comic
+                            digital comics
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                            dc merchandis
+                            dc merchandise
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                            subscriptio
+                            subscription
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img id="special-img" src="../assets/img/buy-comics-shop-locator.png" alt="">
-                            comic shop locato
+                            comic shop locator
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                            dc power vis
+                            dc power visa
                         </a>
                     </li>
                 </ul>
