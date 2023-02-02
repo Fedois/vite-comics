@@ -5,7 +5,9 @@ export default {
 </script>
 
 <template>
-  foot
+     <div>
+        foot
+    </div>
 </template>
 
 <style scoped>
