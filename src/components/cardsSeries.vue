@@ -1,24 +1,35 @@
 <script>
 export default{
-    name: 'cardsSeries'
+    name: 'cardsSeries',
+    props: {
+        title: String,
+        src: String,
+    }
 }
 </script>
 
 <template>
     <div>
-        <img src="../assets/img/jumbotron.jpg" alt="">
-        <p>ciao</p>
+        <div class="img-series">
+            <img :src="src" :alt="title">
+        </div>
+        <p>{{ title }}</p>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .card{
     width: calc(100% / 6);
-    border: 1px solid white;
-    margin: 30px 0;
     padding: 20px;
 }
-img{
+.img-series{
     width: 100%;
+
+    img{
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 </style>

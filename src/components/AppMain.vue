@@ -98,6 +98,7 @@ export default {
 
             <div class="cards">
                 <cardsSeries class="card" v-for="card in listCards"
+                :src="card.thumb"
                 :title="card.series"/>
             </div>
         </div>
@@ -106,18 +107,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.jumbotron{
-    height: 500px;
-
-    > img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
-}
 main{
     background-color: rgb(27, 27, 27);
+
+    .jumbotron{
+        height: 500px;
+
+        > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+}
     .container{
         position: relative;
         color: white;
@@ -135,7 +137,6 @@ main{
         > .cards{
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
             padding: 20px 0;
         }
