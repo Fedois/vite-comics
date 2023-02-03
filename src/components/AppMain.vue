@@ -101,6 +101,10 @@ export default {
                 :src="card.thumb"
                 :title="card.series"/>
             </div>
+
+            <div class="load">
+                <button><a href="#">LOAD MORE</a></button>
+            </div>
         </div>
     </main>
     
@@ -138,7 +142,22 @@ main{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 20px 0;
+            padding-top: 30px;
+        }
+        > .load{
+            text-align: center;
+            padding-bottom: 20px;
+
+            > button{
+                background-color: rgb(0, 128, 255);
+                border: none;
+                padding: 5px 40px;
+
+                > a{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
         }
      }
 }
