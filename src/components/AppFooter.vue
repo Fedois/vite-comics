@@ -230,38 +230,41 @@ export default {
     </footer>
 </template>
 
-<style scoped>
-/* inizio section top */
+<style lang="scss" scoped>
+/* section top */
 .section-top{
     background-color: rgb(0, 128, 255);
-}
-.small-container{
-    max-width: 1100px;
-     margin: 0 auto;
-    height: 130px;
-}
-            
-.small-container > .list-buy{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.list-buy img{
-    width: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-.special-img{
-    width: 40px;
-}
 
-.list-buy li > a{
-    color: white;
-    text-transform: uppercase;
-}
+    .small-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 130px;
 
-/* inizio section-middle */
+        > .list-buy{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                li > a{
+                color: white;
+                text-transform: uppercase;
+
+                > img{
+                    width: 50px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}
+// .special-img{
+//     width: 40px;
+// }
+
+/* section-middle */
 .section-middle{
     background: url("../assets/img/footer-bg.jpg");
     background-size: cover;
@@ -271,70 +274,78 @@ export default {
 .container{
     display: flex;
 
-}
-.list-container{
-    padding-top: 20px ;
-    display: flex;
-    color: white;
-    width: 50%;
-}
+    .list-container{
+        padding-top: 20px ;
+        display: flex;
+        color: white;
+        width: 50%;
 
-.list-container > div{
-    margin-right: 30px;
-}
+        > div{
+            margin-right: 30px;
 
-h3{
-    margin: 15px 0;
-}
-ul li > a{
-    color: rgb(173, 168, 168);
-    text-transform: capitalize;
-}
-.big-logo{
-    width: 50%;
-    position: relative;
-}
+            h3{
+                margin: 15px 0;
+            }
+            a{
+                color: rgb(173, 168, 168);
+                text-transform: capitalize;
+            }
+        }
+    }
+    .big-logo{
+        width: 50%;
+        position: relative;
 
-.big-logo img{
-    position: absolute;
-    top: -100px;
-    left: 0;
+        > img{
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+    }
 }
 
 /* inizio section bottom */
 .section-bottom{
     height: 100px;
     background-color: rgb(27, 27, 27);
-}
-.section-bottom > .container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.sign > button{
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid rgb(0, 128, 255);
-}
-.sign > button a{
-    color: white;
-}
-.follow > h3{
-    color: rgb(0, 128, 255);
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align:middle;
-}
-.list-social{
-    display: inline-block;
-}
-.list-social > li{
-    display: inline-block;
-}
-.list-social > li img{
-    margin: 0 5px;
-    vertical-align: middle;
-    width: 30px;
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid rgb(0, 128, 255);
+
+            > a{
+                color: white;
+            }
+        }
+        .follow { 
+            > h3{
+                color: rgb(0, 128, 255);
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align:middle;
+            }
+
+            .list-social{
+                display: inline-block;
+
+                > li{
+                    display: inline-block;
+
+                    img{
+                        margin: 0 5px;
+                        vertical-align: middle;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
