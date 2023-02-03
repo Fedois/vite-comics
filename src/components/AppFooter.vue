@@ -1,6 +1,151 @@
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+      return {
+        linksBuy: [
+            {
+                img: 'buy-comics-digital-comics.png',
+                name: 'carachters',
+            },
+            {
+                img: 'buy-comics-merchandise.png',
+                name: 'comics',            
+            },
+            {
+                img: 'buy-comics-subscriptions.png',
+                name: 'movies',
+            },
+            {
+                img: 'buy-comics-shop-locator.png',
+                name: 'tv',
+                resize: 'special-img',
+            },
+            {
+                img: 'buy-dc-power-visa.svg',
+                name: 'games',
+            },
+        ],
+        listComic: [
+            {
+                name: 'carachters',
+            },
+            {
+                name: 'comics',            
+            },
+            {
+                name: 'movies',
+            },
+            {
+                name: 'TV',
+            },
+            {
+                name: 'games',
+            },
+            {
+                name: 'videos',
+            },
+            {
+                name: 'news',
+            },
+        ],
+        listShop: [
+            {
+                name: 'shop DC',
+            },
+            {
+                name: 'shop DC Collectibles',
+            },
+        ],
+        listDC: [
+            {
+                name: 'terms of use',
+            },
+            {
+                name: 'privacy policy (new)',            
+            },
+            {
+                name: 'ad choices',
+            },
+            {
+                name: 'advertising',
+            },
+            {
+                name: 'jobs',
+            },
+            {
+                name: 'subscriptions',
+            },
+            {
+                name: 'talent',
+            },
+            {
+                name: 'workshops',
+            },
+            {
+                name: 'CPSC',            
+            },
+            {
+                name: 'certificates',
+            },
+            {
+                name: 'ratings',
+            },
+            {
+                name: 'shop help',
+            },
+            {
+                name: 'contact us',
+            },
+        ],
+        listSites: [
+            {
+                name: 'DC',
+            },
+            {
+                name: 'MAD',            
+            },
+            {
+                name: 'magazine',
+            },
+            {
+                name: 'DC kids',
+            },
+            {
+                name: 'DC',
+            },
+            {
+                name: 'universe',
+            },
+            {
+                name: 'DC power visa',
+            },
+        ],
+        listSocial: [
+            {
+                img: 'footer-facebook.png',
+            },
+            {
+                img: 'footer-twitter.png',
+            },
+            {
+                img: 'footer-youtube.png',
+            },
+            {
+                img: 'footer-pinterest.png',
+            },
+            {
+                img: 'footer-periscope.png',
+            },
+        ]
+        
+      }
+    },
+    methods: {
+        getImagePath: function(imgPath){
+            return new URL (imgPath, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -9,88 +154,51 @@ export default {
         <section class="section-top">
             <div class="small-container">
                 <ul class="list-buy">
-                    <li>
+                    <li v-for="link in linksBuy">
                         <a href="#">
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                            digital comics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                            dc merchandise
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                            subscription
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img id="special-img" src="../assets/img/buy-comics-shop-locator.png" alt="">
-                            comic shop locator
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                            dc power visa
+                            <img :src="getImagePath(`../assets/img/${link.img}`)" alt="">
+                            {{ link.name }}
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
         
-        <section class="jumbotron">
+        <section class="section-middle">
             <div class="container">
 
                 <div class="list-container">
                     <div id="comics-and-shop">
                         <h3>DC COMICS</h3>
                         <ul>
-                            <li> <a href="#">characters</a> </li>
-                            <li> <a href="#">comics</a> </li>
-                            <li> <a href="#">movie</a> </li>
-                            <li> <a href="#"> TV</a></li>
-                            <li> <a href="#">games</a> </li>
-                            <li> <a href="#">videos</a> </li>
-                            <li> <a href="#">news</a> </li>
+                            <li v-for="link in listComic">
+                                <a href="#">{{ link.name }}</a>
+                            </li>
                         </ul>
 
                         <h3>SHOP</h3>
                         <ul>
-                            <li><a href="#">shop DC</a></li>
-                            <li><a href="#">shop DC Collectibles</a></li>
+                            <li v-for="link in listShop">
+                                <a href="#">{{ link.name }}</a>
+                            </li>
                         </ul>
                     </div>
                 
                     <div id="dc">
                         <h3>DC</h3>
                         <ul>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advetising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC certificates</a></li>
-                            <li><a href="#">ratings</a></li>
-                            <li><a href="#">shop help</a></li>
-                            <li><a href="#">contact us</a></li>
+                            <li v-for="link in listDC">
+                                <a href="#">{{ link.name }}</a>
+                            </li>
                         </ul>
                     </div>
                 
                     <div id="SITES">
                         <h3>SITES</h3>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC kids</a></li>
-                            <li><a href="#">DC universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            <li v-for="link in listSites">
+                                <a href="#">{{ link.name }}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -110,41 +218,20 @@ export default {
                 <div class="follow">
                     <h3>FOLLOW US</h3>
                     <ul class="list-social">
-                        <li>
+                        <li v-for="social in listSocial">
                             <a href="#">
-                                <img src="../assets/img/footer-facebook.png" alt="">
-                            </a> 
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                <img src="../assets/img/footer-twitter.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/footer-youtube.png" alt="">
-                            </a> 
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                <img src="../assets/img/footer-pinterest.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/footer-periscope.png" alt="">
+                                <img :src="getImagePath(`../assets/img/${social.img}`)" alt="">
                             </a> 
                         </li>
                     </ul>
                 </div>
             </div>
-            
         </section>
     </footer>
 </template>
 
 <style scoped>
-/* contenuto top */
+/* inizio section top */
 .section-top{
     background-color: rgb(0, 128, 255);
 }
@@ -165,7 +252,7 @@ export default {
     vertical-align: middle;
     margin-right: 10px;
 }
-#special-img{
+.special-img{
     width: 40px;
 }
 
@@ -174,8 +261,8 @@ export default {
     text-transform: uppercase;
 }
 
-/* inizio jumbotron */
-.jumbotron{
+/* inizio section-middle */
+.section-middle{
     background: url("../assets/img/footer-bg.jpg");
     background-size: cover;
     height: 400px;
@@ -213,6 +300,8 @@ ul li > a{
     top: -100px;
     left: 0;
 }
+
+/* inizio section bottom */
 .section-bottom{
     height: 100px;
     background-color: rgb(27, 27, 27);

@@ -1,9 +1,42 @@
 <script>
 export default {
     name: 'AppMain',
-    Data(){
-
-    }
+    // data() {
+    //   return {
+    //     linksMain: [
+    //         {
+    //             name: 'carachters',
+    //         },
+    //         {
+    //             name: 'comics',            },
+    //         {
+    //             name: 'movies',
+    //         },
+    //         {
+    //             name: 'tv',
+    //         },
+    //         {
+    //             name: 'games',
+    //         },
+    //         {
+    //             name: 'collectibles',
+    //         },
+    //         {
+    //             name: 'videos',
+    //         },
+    //         {
+    //             name: 'fans',
+    //         },
+    //         {
+    //             name: 'news',
+    //         },
+    //         {
+    //             name: 'shop',
+    //         },
+    //     ]
+        
+    //   }
+    // }
 }
 </script>
 
