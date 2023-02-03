@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    Data(){
+
+    }
 }
 </script>
 
@@ -15,7 +18,7 @@ export default {
     
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main{
     height: 100px;
     background-color: black;
